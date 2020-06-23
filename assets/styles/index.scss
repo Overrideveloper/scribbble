@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: monospace;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 2rem 4rem;
+    width: 100%;
+
+    p {
+        margin: 0.5rem 0;
+    }
+
+    .attempt {
+        margin-top: 1rem;
+        width: 100%;
+    }
+}

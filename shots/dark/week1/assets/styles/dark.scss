@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #947942;
+    background-image: url(../img/dark-sm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(16px);
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 64%;
+    height: 70%;
+    background-color: #947942;
+    background-image: url(../img/dark-sm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    padding: 1.5rem 1.2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: auto;
+
+    .title {
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 22px;
+        margin: 0;
+        letter-spacing: 20px;
+    }
+
+    .netflix-logo {
+        height: 32px;
+        filter: brightness(0) invert(1);
+    }
+}
+
+.mid {
+    bottom: 30%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .title {
+        color: white;
+        font-size: 100px;
+        margin: 0;
+        text-transform: uppercase;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        letter-spacing: 80px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .years {
+        span {
+            font-family: monospace;
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            color: rgba(220, 220, 220, 0.5);
+
+            &.selected {
+                color: white;
+                display: flex;
+                align-items: center;
+
+                .bar {
+                    height: auto;
+                    width: 40px;
+                    margin-right: 4px;
+                    border-bottom: 1.4px solid white;
+                }
+                
+                margin-left: calc(1.2rem + 4px - 40px);
+            }
+
+            &:not(:last-of-type) {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+
+.bottom {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 56px;
+
+        h6 {
+            color: white;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 12px;
+            letter-spacing: 1px;
+            font-family: monospace;
+            filter: blur(0.4px);
+
+            &:not(:last-of-type) {
+                margin-right: 24px;
+            }
+
+            &:first-of-type {
+                border-bottom: 1px solid white;
+            }
+        }
+    }
+
+    .control {
+        height: auto;
+        width: 50%;
+        border-radius: 10px;
+        display: flex;
+
+        .detail {
+            height: 100%;
+            width: 65%;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            background-color: #76694C;
+            padding: 0.8rem 1.2rem;
+            box-sizing: border-box;
+
+            .index {
+                font-family: monospace;
+                font-size: 12px;
+                letter-spacing: 2px;
+                color: rgba(220, 220, 220, 0.7);
+            }
+
+            .title {
+                margin: 4px 0;
+                color: white;
+                text-transform: uppercase;
+                font-family: monospace;
+                font-weight: 200;
+                font-size: 16px;
+                letter-spacing: 10px;
+                filter: blur(0.3px);
+            }
+
+            .desc {
+                margin: 0;
+                color: white;
+                font-size: 11px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        }
+
+        .thumbnail {
+            height: auto;
+            width: 35%;
+            background-color: #947942;
+            background-image: url(../img/dark2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .play-btn {
+                background-color: #BAAFAB;
+                border-radius: 50%;
+                width: fit-content;
+                height: fit-content;
+                padding: 4px 6px 2px 6px;
+
+                svg {
+                    fill: #4E4038;
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+    }
+}
