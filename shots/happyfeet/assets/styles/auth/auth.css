@@ -1,0 +1,130 @@
+ion-content#auth {
+  --background: #FFFFFF;
+  position: absolute;
+  z-index: 90;
+}
+
+ion-content#auth .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+ion-content#auth .app-logo svg {
+  fill: #F6BECB;
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: auto;
+}
+
+ion-content#auth .app-logo h4 {
+  margin: 0.7rem 0 0 0;
+  text-align: center;
+  font-family: cursive;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+ion-content#auth .app-login {
+  margin-top: 40px;
+  width: 100%;
+  padding: 0 10%;
+}
+
+ion-content#auth .app-login .mode-control {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ion-content#auth .app-login .mode-control .mode {
+  width: 40%;
+}
+
+ion-content#auth .app-login .mode-control .mode h5 {
+  margin: 0 0 4px 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  -webkit-filter: blur(0.3px);
+          filter: blur(0.3px);
+}
+
+ion-content#auth .app-login .mode-control .mode:first-of-type {
+  border-bottom: 3px solid #F6BECB;
+  margin-right: 8px;
+}
+
+ion-content#auth .app-login .mode-control .mode:last-of-type {
+  margin-left: 8px;
+}
+
+ion-content#auth #login-form {
+  margin-top: 1rem;
+}
+
+ion-content#auth #login-form ion-item {
+  --padding-start: 0;
+  --border-color: #000000;
+  --highlight-color-focused: #F6BECB;
+}
+
+ion-content#auth #login-form ion-item:first-of-type {
+  margin-bottom: 1rem;
+}
+
+ion-content#auth #login-form ion-label {
+  font-size: 13px;
+  color: #A1A1A1;
+}
+
+ion-content#auth #login-form ion-input {
+  font-size: 12px;
+  font-weight: 500;
+  --padding-top: 16px;
+  --padding-bottom: 0;
+}
+
+ion-content#auth #login-form ion-button#submit-btn {
+  font-size: 12px;
+  text-transform: none;
+  --background: #000000;
+  --color: #F6BECB;
+  --color-activated: #F6BECB;
+  --border-radius: 112px;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+ion-content#auth #login-form a#forgot-password {
+  float: right;
+  color: #9B9B9B;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+ion-content#auth.exit {
+  -webkit-animation: Exit 700ms both;
+          animation: Exit 700ms both;
+}
+/*# sourceMappingURL=auth.css.map */

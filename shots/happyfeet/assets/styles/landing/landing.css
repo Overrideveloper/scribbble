@@ -1,0 +1,90 @@
+ion-content#landing {
+  --background: #F5BDCA;
+  position: absolute;
+  z-index: 100;
+}
+
+ion-content#landing .main {
+  height: 100%;
+  width: 100%;
+  background-color: #F5BDCA;
+  background-image: url(../../img/feet.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+ion-content#landing .app-logo {
+  position: relative;
+  bottom: 22%;
+  width: 100%;
+}
+
+ion-content#landing .app-logo h4 {
+  margin: 0;
+  text-align: center;
+  font-family: cursive;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+ion-content#landing .app-logo img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+
+ion-content#landing ion-footer {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+ion-content#landing ion-footer::before {
+  display: none;
+}
+
+ion-content#landing ion-button#get-started-btn {
+  width: 80%;
+  margin: 0 auto 20px;
+  font-size: 12px;
+  text-transform: none;
+  --background: #000000;
+  --color: #F5BDCA;
+  --color-activated: #F5BDCA;
+  --border-radius: 112px;
+}
+
+ion-content#landing ion-button#get-started-btn span {
+  -webkit-filter: blur(0.3px);
+          filter: blur(0.3px);
+}
+
+ion-content#landing ion-button#get-started-btn ion-icon, ion-content#landing ion-button#get-started-btn span {
+  margin-left: auto;
+}
+
+ion-content#landing.exit {
+  -webkit-animation: Exit 700ms both;
+          animation: Exit 700ms both;
+}
+/*# sourceMappingURL=landing.css.map */

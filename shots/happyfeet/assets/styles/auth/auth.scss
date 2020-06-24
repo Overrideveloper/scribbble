@@ -1,0 +1,114 @@
+ion-content#auth {
+    --background: #FFFFFF;
+    position: absolute;
+    z-index: 90;
+
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .app-logo {
+        svg {
+            fill: #F6BECB;
+            width: 48px;
+            height: 48px;
+            display: block;
+            margin: auto;
+        }
+            
+        h4 {
+            margin: 0.7rem 0 0 0;
+            text-align: center;
+            font-family: cursive;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+    .app-login {
+        margin-top: 40px;
+        width: 100%;
+        padding: 0 10%;
+
+        .mode-control {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .mode {
+                width: 40%;
+
+                h5 {
+                    margin: 0 0 4px 0;
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: 600;
+                    filter: blur(0.3px);
+                }
+
+                &:first-of-type {
+                    border-bottom: 3px solid #F6BECB;
+                    margin-right: 8px;
+                }
+
+                &:last-of-type {
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+
+    #login-form {
+        margin-top: 1rem;
+
+        ion-item {
+            --padding-start: 0;
+            --border-color: #000000;
+            --highlight-color-focused: #F6BECB;
+
+            &:first-of-type {
+                margin-bottom: 1rem;
+            }
+        }
+
+        ion-label {
+            font-size: 13px;
+            color: #A1A1A1;
+        }
+
+        ion-input {
+            font-size: 12px;
+            font-weight: 500;
+            --padding-top: 16px;
+            --padding-bottom: 0;
+        }
+
+        ion-button#submit-btn {
+            font-size: 12px;
+            text-transform: none;
+            --background: #000000;
+            --color: #F6BECB;
+            --color-activated: #F6BECB;
+            --border-radius: 112px;
+            font-weight: 400;
+            margin-top: 2rem;
+        }
+
+        a#forgot-password {
+            float: right;
+            color: #9B9B9B;
+            font-size: 11px;
+            font-weight: 500;
+            margin-top: 6px;
+        }
+    }
+
+    &.exit {
+        animation: Exit 700ms both;
+    }
+}

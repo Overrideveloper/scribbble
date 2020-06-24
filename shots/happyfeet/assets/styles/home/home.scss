@@ -1,0 +1,137 @@
+ion-content#home {
+    --background: #FFFFFF;
+    position: absolute;
+    z-index: 80;
+
+    .toolbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ion-button {
+            --padding-bottom: 0;
+            --padding-end: 0;
+            --padding-start: 0;
+            --padding-top: 0;
+            color: #000000;
+
+            ion-icon {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .welcome {
+        margin: 4px 0 0 4px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .search-box {
+        width: 100%;
+        padding: 0 6px;
+        position: relative;
+        
+        input {
+            width: 100%;
+            height: 36px;
+            margin-top: 0.8rem;
+            border-radius: 112px;
+            border: 1.5px solid #EAEAEA;
+            outline: none;
+            padding: 1rem 2.5rem 1rem 1rem;
+            font-size: 12px;
+            box-sizing: border-box;
+        }
+
+        .search-btn {
+            border-radius: 50%;
+            background-color: #F5BDCA;
+            position: absolute;
+            outline: none;
+            border: none;
+            height: 26px;
+            right: 12px;
+            top: 17px;
+
+            ion-icon {
+                color: #A1A1A1;
+            }
+
+            &:active {
+                background-color: #A1A1A1;
+
+                ion-icon {
+                    color: #F5BDCA;
+                }
+            }
+        }
+    }
+
+    .categories {
+        box-sizing: content-box;
+        margin-top: 1.2rem;
+        width: 100%;
+        padding-left: 40px;
+
+        .category {
+            display: inline;
+
+            h6 {
+                margin: 0;
+                display: inline;
+                font-size: 12px;
+                font-weight: 600;
+                color: #A1A1A1;
+            }
+
+            &.selected {
+                border-bottom: 3px solid #F5BDCA;
+
+                h6 {
+                    color: #000000;
+                }
+            }
+
+            &:not(:last-of-type) {
+                margin-right: 16px;
+            }
+        }
+    }
+
+    ion-card {
+        border-radius: 24px;
+    }
+
+    ion-card-content {
+        height: 240px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card-inner {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding-bottom: 0.5rem;
+
+        .name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #000000;
+            margin-left: 1rem;
+        }
+
+        .price {
+            color: #FFFFFF;
+            font-size: 13px;
+            font-weight: 600;
+            background-color: #000000;
+            padding: 0.8rem 1rem;
+            border-radius: 12px;
+        }
+    }
+}

@@ -30,4 +30,8 @@ html, body {
   margin-top: 1rem;
   width: 100%;
 }
+
+.container .attempt .detail {
+  margin-left: 1rem;
+}
 /*# sourceMappingURL=index.css.map */

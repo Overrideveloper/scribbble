@@ -1,0 +1,75 @@
+ion-content#landing {
+    --background: #F5BDCA;
+    position: absolute;
+    z-index: 100;
+
+    .main {
+        height: 100%;
+        width: 100%;
+        background-color: #F5BDCA;
+        background-image: url(../../img/feet.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        position: relative;
+    }
+
+    .app-logo {
+        position: relative;
+        bottom: 22%;
+        width: 100%;
+        
+        h4 {
+            margin: 0;
+            text-align: center;
+            font-family: cursive;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            height: 48px;
+            width: 48px;
+        }
+    }
+
+    ion-footer {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    ion-button#get-started-btn {
+        width: 80%;
+        margin: 0 auto 20px;
+        font-size: 12px;
+        text-transform: none;
+        --background: #000000;
+        --color: #F5BDCA;
+        --color-activated: #F5BDCA;
+        --border-radius: 112px;
+
+        span {
+            filter: blur(0.3px);
+        }
+
+        ion-icon, span {
+            margin-left: auto;
+        }
+    }
+
+    &.exit {
+        animation: Exit 700ms both;
+    }
+}
